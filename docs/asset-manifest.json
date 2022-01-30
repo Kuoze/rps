@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b3f339cb.css",
+    "main.js": "/static/js/main.c040efa0.js",
+    "static/media/ic_magic_eden.png": "/static/media/ic_magic_eden.6a80a2955176f422f1e2.png",
+    "index.html": "/index.html",
+    "main.b3f339cb.css.map": "/static/css/main.b3f339cb.css.map",
+    "main.c040efa0.js.map": "/static/js/main.c040efa0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3f339cb.css",
+    "static/js/main.c040efa0.js"
+  ]
+}
