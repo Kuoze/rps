@@ -11,10 +11,10 @@ export const AppRouter = () => {
     <BrowserRouter>
         <Navbar />
         <Routes>
-              <Route path="/about" element={ <AboutScreen /> } />
-              <Route path="/leaderboard" element={ <LeaderboardScreen /> } />
-              <Route path="/timeline" element={ <TimelineScreen /> } />
-              <Route path="/" element={ <HomeScreen /> } />
+              <Route path="https://kuoze.github.io/rps/about" element={ <AboutScreen /> } />
+              <Route path="https://kuoze.github.io/rps/leaderboard" element={ <LeaderboardScreen /> } />
+              <Route path="https://kuoze.github.io/rps/timeline" element={ <TimelineScreen /> } />
+              <Route path="https://kuoze.github.io/rps/" element={ <HomeScreen /> } />
           </Routes>        
     </BrowserRouter>
 
