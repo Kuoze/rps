@@ -11,3 +11,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.play-list {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: auto;
+}
+
+.profile-picture {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+.profile-picture .image {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.time-in.row {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: #fff;
+  min-height: 94.1vh;
+}
+
+.dark-color {
+  color: #fff;
+}
+
+.discord-icon {
+  color:  #7289DA;
+}
+
+.discord-icon:hover {
+  color:  rgba(114,137,218, .8);
+}
+
+.twitter-icon {
+  color: rgba(29, 161, 242, 1);
+}
+
+.twitter-icon:hover {
+  color: rgba(29, 161, 242, 0.8);
+}
+
+.dark-list-item {
+  background-color: rgb(30,41,59);
+  color: #fff;
+}
+
+.dark-list-item:hover {
+  background-color: rgba(30,41,59, 0.8);
+  color: #fff;  
+}
+
+.wallet-adapter-button {
+  background-color: #404144;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "Inter","Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: #4e44ce;
+}
+
+.btn-hover {
+  width: 250px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  /* padding-top: 35px; */
+  height: 80px;
+  text-align:center;    
+  border: none;
+  text-decoration: none;
+  background-size: 300% 100%;
+  border-radius: 20px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.btn-wallet {
+  background-image: linear-gradient(
+    to right,
+    #fc6076,
+    #ff9a44,
+    #ef9d43,
+    #e75516
+  );
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}

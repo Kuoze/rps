@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer, useEffect } from 'react';
+import { ThemeContext } from './context/themeContext';
+import { themeReducer } from './reducers/themeReducer';
+import { AppRouter } from './routers/AppRouter';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const init = () => {
+  return JSON.parse(localStorage.getItem('theme')) || { theme: 'light' };
 }
+
+const App = () => {
+  const [ theme, dispatch ] = useReducer(themeReducer, {}, init);
+
+  useEffect(() => {
+    if (!theme) return;
+
+    localStorage.setItem('theme', JSON.stringify(theme));
+  }, [theme]);
+
+  return (
+    <ThemeContext.Provider value={{ theme, dispatch }}>
+      <AppRouter />
+    </ThemeContext.Provider>
+  );
+};
 
 export default App;
