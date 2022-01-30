@@ -29,22 +29,22 @@ export const NavbarMobile = ({ theme, handleThemeChange }) => {
                     <div className="offcanvas-body text-center">
                         <ul className="navbar-nav flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <a className="nav-link active" aria-current="page" href="./">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/about">About</a>
+                                <a className="nav-link" href="./about">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/timeline">Timeline</a>
+                                <a className="nav-link" href="./timeline">Timeline</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/leaderboard">Leaderboard</a>
+                                <a className="nav-link" href="./leaderboard">Leaderboard</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">How To Play</a>
+                                <a className="nav-link" href="./">How To Play</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">FAQ</a>
+                                <a className="nav-link" href="./">FAQ</a>
                             </li>                            
                         </ul>    
 
