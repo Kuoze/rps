@@ -19,19 +19,19 @@ export const NavbarDesktop = ({ theme, handleThemeChange }) => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav m-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="./">Home</a>
+                            <a className="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="./about">About</a>
+                            <a className="nav-link" href="/about">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="./timeline">Timeline</a>
+                            <a className="nav-link" href="/timeline">Timeline</a>
                         </li>                       
                         <li className="nav-item">
-                            <a className="nav-link" href="./">How To Play</a>
+                            <a className="nav-link" href="">How To Play</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="./">FAQ</a>
+                            <a className="nav-link" href="/">FAQ</a>
                         </li>    
                     </ul>                    
                 </div>

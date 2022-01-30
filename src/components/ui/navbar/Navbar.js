@@ -7,7 +7,7 @@ import { NavbarDesktop } from './NavbarDesktop';
 
 export const Navbar = () => {
 
-    const isMobileResolution = useMatchMedia('(max-width:678px)', false);
+    const isMobileResolution = useMatchMedia('(max-width:992px)', false);
 
     const { theme, dispatch } = useContext( ThemeContext );    
     
