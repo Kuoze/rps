@@ -80,21 +80,20 @@ export const HomeScreen = () => {
               <small className="ms-auto mt-auto time-in-row">6 seconds ago</small>
             </a>
           </ul>
-        </div>
+        </div>       
 
-        <div className="d-flex flex-row gap-2 justify-content-center mt-3">
+      </div>
+      <div className={`social-icons d-flex flex-row justify-content-center py-4 ${theme.theme}`}>
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-            <img className="rounded mt-1" src={MEIcon} style={{ width: '36px', heigh: '36px' }} alt="Magic Eden Marketplace" />
+            <img className="rounded mt-1 me-2" src={MEIcon} style={{ width: '36px', heigh: '36px' }} alt="Magic Eden Marketplace" />
           </a>
-          <a href="https://www.google.com" className="twitter-icon" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.google.com" className="twitter-icon me-2" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-2x fa-twitter"></i>
           </a>
           <a href="https://www.google.com" className="discord-icon" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-2x fa-discord"></i>
           </a>
         </div>
-
-      </div>
     </div>
   );
 };

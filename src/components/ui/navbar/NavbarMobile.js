@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import MEIcon from '../../../assets/ic_magic_eden.png';
 
@@ -28,23 +29,15 @@ export const NavbarMobile = ({ theme, handleThemeChange }) => {
                     
                     <div className="offcanvas-body text-center">
                         <ul className="navbar-nav flex-grow-1 pe-3">
+                            <NavLink className={({ isActive }) => "nav-item nav-link " + (isActive ? 'active' : '')} to="/" >HOME</NavLink>
+                            <NavLink className={({ isActive }) => "nav-item nav-link " + (isActive ? 'active' : '')} to="/about" >ABOUT</NavLink>
+                            <NavLink className={({ isActive }) => "nav-item nav-link " + (isActive ? 'active' : '')} to="/timeline" >TIMELINE</NavLink>
+                            <NavLink className={({ isActive }) => "nav-item nav-link " + (isActive ? 'active' : '')} to="/leaderboard" >LEADERBOARD</NavLink>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <button className="nav-link btn btn-transparent w-100" data-bs-toggle="modal" data-bs-target="#howToPlayModal">How To Play</button>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/about">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/timeline">Timeline</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/leaderboard">Leaderboard</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">How To Play</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">FAQ</a>
+                                <button className="nav-link btn btn-transparent w-100" data-bs-toggle="modal" data-bs-target="#faqModal">FAQ</button>
                             </li>                            
                         </ul>    
 

@@ -1,6 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const NavbarDesktop = ({ theme, handleThemeChange }) => {
+    
     return (
         <nav className={`navbar navbar-expand-lg ${ theme === 'dark' ? 'navbar-dark bg-dark' : 'navbar-light bg-light' }`}>
             <div className="container-fluid">
@@ -18,24 +20,18 @@ export const NavbarDesktop = ({ theme, handleThemeChange }) => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+                        <NavLink className={ ({ isActive }) => "nav-item nav-link " + (isActive ? 'active' : '')} to="/" >HOME</NavLink>
+                        <NavLink className={ ({ isActive }) => "nav-item nav-link " + (isActive ? 'active' : '')} to="/about" >ABOUT</NavLink>
+                        <NavLink className={ ({ isActive }) => "nav-item nav-link " + (isActive ? 'active' : '')} to="/timeline" >TIMELINE</NavLink>                                       
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/">Home</a>
+                            <button className="nav-link btn btn-transparent" data-bs-toggle="modal" data-bs-target="#howToPlayModal">HOW TO PLAY</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/about">About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/timeline">Timeline</a>
-                        </li>                       
-                        <li className="nav-item">
-                            <a className="nav-link" href="">How To Play</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">FAQ</a>
+                            <button className="nav-link btn btn-transparent" data-bs-toggle="modal" data-bs-target="#faqModal">FAQ</button>
                         </li>    
                     </ul>                    
                 </div>
-                <a href="/leaderboard" className="btn btn-outline-info">LeaderBoard</a>
+                <NavLink className="btn btn-outline-info" to="/leaderboard" >LEADERBOARD</NavLink>
             </div>
         </nav>
     );

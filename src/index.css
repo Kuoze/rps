@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
 code {
@@ -47,12 +48,11 @@ a {
 
 .dark {
   background-color: #0f172a;
-  color: #fff;
-  min-height: 94.1vh;
+  color: #fff;  
 }
 
 .dark-color {
-  color: #fff;
+  border-color: #fff;
 }
 
 .discord-icon {
@@ -142,4 +142,10 @@ a {
     #e75516
   );
   box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.social-icons {
+  bottom: 0;
+  position: relative;
+  width: 100%;
 }
